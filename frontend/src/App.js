@@ -1,25 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import Routes from './routes';
+import './global.css';
 
-function App() {
+//componente no react é uma função que retorna HTML.
+//JSX é quando o HTML está integrado dentro do Java Script
+//quando usa o useState ele retorna um Array[valor, funcaoDeAtualizacao]
+//o useState não pode modificar a variável direto, por isso cria o setXxxx
+function App() {  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello OmniStack
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes />
   );
 }
 
